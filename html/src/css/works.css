@@ -1,0 +1,159 @@
+body.works {
+  background-color: #fff;
+}
+
+body.works section {
+  padding: 200px 0;
+}
+
+body.works section:nth-child(2n - 1) {
+  background: #f4f4f4;
+}
+
+body.works section h1 {
+  width: 20%;
+}
+
+body.works section h2 {
+  width: 60%;
+  float: left;
+}
+
+body.works section h2.text-r {
+  width: 40%;
+}
+
+body.works section h2 span {
+  display: block;
+}
+
+body.works section > div > p {
+  margin: 5vh 0 10vh;
+  width: 60%;
+}
+
+body.works section h3 {
+  width: 50%;
+  float: left;
+  font-weight: 700;
+}
+
+body.works section h4 {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+body.works section.Visual-Recognition ul.article li {
+  width: 31%;
+}
+
+body.works section.Technical-case ul.article img {
+  margin-bottom: 30px;
+}
+
+body.works section.Technical-case ul.article li {
+  border-top: 0;
+}
+
+body.works section.Technical-case ul.article h4 {
+  float: none;
+}
+
+body.works section.Technical-case ul.article p {
+  opacity: 1;
+  display: block;
+  position: static;
+  margin: 10px 0 0;
+}
+
+body.works section ul.article {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0 0;
+}
+
+body.works section ul.article h4 {
+  margin: 20px 0 0;
+}
+
+body.works section ul.article h4 span {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  position: absolute;
+  top: 15px;
+  right: 107%;
+}
+
+body.works section ul.article li {
+  border-top: 1px solid #000;
+  width: 48%;
+  padding: 30px 0;
+  position: relative;
+}
+
+body.works section ul.article li .glasses {
+  width: 90px;
+  line-height: 50px;
+}
+
+body.works section ul.article li:hover .blur-area {
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body.works section ul.article li:hover p {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body.works section ul.article li h3 {
+  float: none;
+  line-height: 50px;
+  height: 50px;
+}
+
+body.works section ul.article li h3 img {
+  width: auto;
+  height: 50px;
+}
+
+body.works section ul.article li h4 {
+  float: left;
+}
+
+body.works section ul.article li p {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  margin-top: -50px;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+}
+
+body.works section ul.article li .more-info {
+  float: right;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.works section ul.article img {
+  width: 100%;
+}
+/*# sourceMappingURL=works.css.map */

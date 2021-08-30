@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for http://placea.ai/</title>
+  <link>http://placea.ai/</link>
+
+<item>
+     <link>https://www.placea.ai/</link>
+     <title>사람다운 인공지능을 연구합니다 - 플레이스에이</title>
+     <description>모두의 일상을 더 쉽고 즐겁게, 인공지능(AI) 기술 기반 서비스 플랫폼 기업</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.placea.ai/index.html</link>
+     <title>사람다운 인공지능을 연구합니다 - 플레이스에이</title>
+     <description>모두의 일상을 더 쉽고 즐겁게, 인공지능(AI) 기술 기반 서비스 플랫폼 기업</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.placea.ai/about.html</link>
+     <title>ABOUT place_a; 플레이스에이 소개</title>
+     <description>우리는 새로운 기술의 경험과 즐거운 일상의 변화를 만들어내기 위해 존재합니다. 우리는 쉽고 자유로운 삶을 제안하는 사람들이 되고자 합니다. </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.placea.ai/works.html</link>
+     <title>WORK at place_a; 플레이스에이에서 만드는 변화(ing)</title>
+     <description>플레이스에이는 사람들의 일과 삶을 편리하게 변화할 수 있는 기술을 연구합니다. Visual Recognition - 실시간 전신 인식 기술 | Smart Factory -  복합 센서 기반 진품 가품 판별 기술 | GAN - 생성적 대립 신경망 기술</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.placea.ai/career.html</link>
+     <title>CAREER at place_a; 플레이스에이 채용</title>
+     <description>hi, we are player_a! 플레이스에이 채용과 커리어. 기대 이상의 기회와 성과 이상의 성장을 함께 할 플레이어를 찾습니다. </description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.placea.ai/contact.html</link>
+     <title>CONTACT place_a; 플레이스에이 오시는 길</title>
+     <description>플레이스에이의 인공지능 기술과 창조적인 협업을 통해 함께 일상을 바꾸어갈 파트너를 기다립니다.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

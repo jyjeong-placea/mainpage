@@ -1,0 +1,4 @@
+User-agent: *
+Allow:/
+Sitemap: https://placea.ai/sitemap.xml
+#DaumWebMasterTool:93f789c344425d60d5b47d25934483d0801034be675923ea3a1ef91a3a8620da:eGo1CE68dvj68MPagqQgrg==

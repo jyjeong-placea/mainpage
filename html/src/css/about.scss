@@ -1,0 +1,58 @@
+@charset "utf-8";
+body {
+	&.about {
+		background-color: #fff;
+		h2 {
+			padding: 40px 0;
+		}
+		.aboutImg {
+			background-size: cover;
+			height: 500px;
+			width: 85vw;
+			background-position: 50% 50%;
+			margin: 100px 0 0;
+			&.left {
+				float: left;
+				border-radius: 0 400px 400px 0;
+				background-position: 50% 0;
+				background-image: url(../img/about1.jpg);
+			}
+			&.right {
+				float: right;
+				border-radius: 400px 0 0 400px;
+				background-image: url(../img/about2.jpg);
+				margin-bottom: 200px;
+			}
+		}
+		section {
+			text-align: left;
+			width: 100%;
+			padding: 200px 0 0;
+			float: left;
+			p {
+				line-height: 1.75;
+				&:last-child {
+					margin-top: 32px;
+				}
+			}
+			&.Mission {
+				.contents,
+				img {
+					float: left;
+				}
+			}
+			> img {
+				width: 80vw;
+			}
+			&.Vision {
+				.contents,
+				img {
+					float: right;
+				}
+			}
+			.contents {
+				width: 50%;
+			}
+		}
+	}
+}

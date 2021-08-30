@@ -1,0 +1,113 @@
+body.contact {
+  background-color: #fff;
+}
+
+body.contact h1 {
+  margin: 45vh auto 160px;
+  line-height: 1.5em;
+  background-size: cover;
+}
+
+body.contact section {
+  padding-bottom: 15vh;
+}
+
+body.contact section h3 {
+  float: left;
+  font-size: 3em;
+  line-height: 2.2;
+}
+
+body.contact section .contact_info {
+  position: relative;
+  font-size: 1.3em;
+}
+
+body.contact section .contact_info ul {
+  width: 50%;
+  float: left;
+}
+
+body.contact section .contact_info ul.locInfo {
+  color: #019ebf;
+  font-weight: 700;
+}
+
+body.contact section .contact_info ul.locInfo li {
+  padding: 20px 0;
+  font-weight: 700;
+  line-height: 1.7;
+  text-align: left;
+}
+
+body.contact section .contact_info ul.locInfo li a {
+  font-weight: 700;
+  color: inherit;
+  font-weight: 700;
+}
+
+body.contact section .contact_info ul.address {
+  width: 40%;
+  float: right;
+}
+
+body.contact section .contact_info ul.address li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  padding: 16px 0;
+}
+
+body.contact section .contact_info ul.address li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.contact section .contact_info ul.address li h4,
+body.contact section .contact_info ul.address li p {
+  font-weight: 700;
+  line-height: 1.5;
+  width: 50%;
+  font-size: 16px;
+}
+
+body.contact section .contact_info ul.address li p {
+  font-weight: 400;
+}
+
+body.contact .map {
+  width: 100%;
+  height: 600px;
+  float: left;
+  background-image: url(../img/map.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-bottom: 200px;
+}
+
+body.contact .map .marker {
+  text-align: center;
+  margin-top: 200px;
+  width: 100%;
+}
+
+body.contact .map::before {
+  content: "";
+  width: calc((100vw - 1220px) / 2);
+  height: 600px;
+  background-color: #fff;
+  position: absolute;
+}
+
+body.contact .img_wrap img {
+  float: left;
+  width: 100%;
+}
+
+body.contact .img_wrap img:last-child {
+  display: none;
+}
+/*# sourceMappingURL=contact.css.map */

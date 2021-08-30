@@ -1,0 +1,12 @@
+@media all and (max-width: 860px) {
+  body.about h1 {
+    font-size: 4em;
+  }
+  body.about section .contents {
+    width: 100%;
+  }
+  body.about section > img {
+    width: 90vw;
+  }
+}
+/*# sourceMappingURL=mobile-about.css.map */

@@ -1,0 +1,4 @@
+AuthName     webalizer
+AuthType     Basic
+AuthUserFile /home/placea/htpasswd
+require      valid-user

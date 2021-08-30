@@ -1,0 +1,132 @@
+@charset "utf-8";
+body {
+	&.works {
+		background-color: #fff;
+		section {
+			padding: 200px 0;
+			&:nth-child(2n - 1) {
+				background: #f4f4f4;
+			}
+			h1 {
+				width: 20%;
+			}
+			h2 {
+				width: 60%;
+				float: left;
+				&.text-r {
+					width: 40%;
+				}
+				span {
+					display: block;
+				}
+			}
+			> div > p {
+				margin: 5vh 0 10vh;
+				width: 60%;
+			}
+			h3 {
+				width: 50%;
+				float: left;
+				font-weight: 700;
+			}
+			h4 {
+				font-size: 1.5em;
+				font-weight: 700;
+				line-height: 1.5em;
+			}
+			&.Visual-Recognition ul.article li {
+				width: 31%;
+			}
+			&.Technical-case ul.article {
+				img {
+					margin-bottom: 30px;
+				}
+				li {
+					border-top: 0;
+				}
+				h4 {
+					float: none;
+				}
+				p {
+					opacity: 1;
+					display: block;
+					position: static;
+					margin: 10px 0 0;
+				}
+			}
+			ul.article {
+				text-align: left;
+				display: flex;
+				justify-content: space-between;
+				padding: 60px 0 0;
+				h4 {
+					margin: 20px 0 0;
+					span {
+						display: inline-block;
+						width: 50%;
+						text-align: right;
+						position: absolute;
+						top: 15px;
+						right: 107%;
+					}
+				}
+				li {
+					border-top: 1px solid #000;
+					width: 48%;
+					padding: 30px 0;
+					position: relative;
+					.glasses {
+						width: 90px;
+						line-height: 50px;
+					}
+					&:hover {
+						.blur-area {
+							opacity: 0;
+							transition: 0.4s;
+						}
+						p {
+							opacity: 1;
+							z-index: 1;
+							transition: 0.4s;
+						}
+					}
+					h3 {
+						float: none;
+						line-height: 50px;
+						height: 50px;
+						img {
+							width: auto;
+							height: 50px;
+						}
+					}
+					h4 {
+						float: left;
+					}
+					p {
+						opacity: 0;
+						z-index: -1;
+						position: absolute;
+						margin-top: -50px;
+						left: 0;
+						width: 100%;
+						display: inline-block;
+					}
+					.more-info {
+						float: right;
+						display: block;
+						width: 30px;
+						height: 30px;
+						line-height: 30px;
+						text-align: center;
+						margin-top: 20px;
+						border-radius: 50%;
+						background: rgba(0, 0, 0, 0.05);
+					}
+				}
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+body.about {
+  background-color: #fff;
+}
+
+body.about h2 {
+  padding: 40px 0;
+}
+
+body.about .aboutImg {
+  background-size: cover;
+  height: 500px;
+  width: 85vw;
+  background-position: 50% 50%;
+  margin: 100px 0 0;
+}
+
+body.about .aboutImg.left {
+  float: left;
+  border-radius: 0 400px 400px 0;
+  background-position: 50% 0;
+  background-image: url(../img/about1.jpg);
+}
+
+body.about .aboutImg.right {
+  float: right;
+  border-radius: 400px 0 0 400px;
+  background-image: url(../img/about2.jpg);
+  margin-bottom: 200px;
+}
+
+body.about section {
+  text-align: left;
+  width: 100%;
+  padding: 200px 0 0;
+  float: left;
+}
+
+body.about section p {
+  line-height: 1.75;
+}
+
+body.about section p:last-child {
+  margin-top: 32px;
+}
+
+body.about section.Mission .contents,
+body.about section.Mission img {
+  float: left;
+}
+
+body.about section > img {
+  width: 80vw;
+}
+
+body.about section.Vision .contents,
+body.about section.Vision img {
+  float: right;
+}
+
+body.about section .contents {
+  width: 50%;
+}
+/*# sourceMappingURL=about.css.map */

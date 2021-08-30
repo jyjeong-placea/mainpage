@@ -1,0 +1,25 @@
+@charset "utf-8";
+@media all and (max-width: 860px) {
+  body{
+    &.about{
+      h1{
+        font-size: 4em;
+      }
+      section{
+        .contents{
+          width: 100%; 
+        }
+        > img {
+          width: 90vw;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 860px) {
+
+}
+@media all and (max-width: 650px) {
+
+}

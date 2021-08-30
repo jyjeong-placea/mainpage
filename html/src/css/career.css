@@ -1,0 +1,139 @@
+body.career .careerWrap.notMobile {
+  height: 9950px;
+}
+
+body.career .careerWrap.notMobile .skrollr-desktop {
+  display: block;
+}
+
+body.career .careerWrap.notMobile .skrollr-Mobile {
+  display: none;
+}
+
+body.career .careerWrap.isMobile {
+  height: 5000px;
+}
+
+body.career .careerWrap.isMobile .skrollr-Mobile {
+  display: block;
+}
+
+body.career .careerWrap.isMobile .skrollr-desktop {
+  display: none;
+}
+
+body.career .careerWrap h1 {
+  color: #fff;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+body.career .careerWrap .careerA {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/career/A1_BACKGROUND.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+body.career .careerWrap .careerA h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  line-height: 1.8;
+  z-index: 4;
+}
+
+body.career .careerWrap .careerA img {
+  position: absolute;
+}
+
+body.career .careerWrap .careerA img.ballonnPeople {
+  position: absolute;
+  top: -8px;
+  left: 10%;
+  width: 25%;
+  min-width: 250px;
+}
+
+body.career .careerWrap .careerA img.ballonn {
+  width: 10%;
+  min-width: 120px;
+  top: 130px;
+  right: 20%;
+}
+
+body.career .careerWrap .gradBG {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle, rgba(10, 56, 68, 0.2) 10%, rgba(10, 56, 68, 0.8));
+  z-index: 3;
+}
+
+body.career .careerWrap .careerB {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../img/career/Bg_b.svg);
+  z-index: -1;
+  background-color: #000;
+}
+
+body.career .careerWrap .careerB .career_tt_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  width: 80%;
+  max-width: 1100px;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-image: url(../img/career/circle_img.svg);
+  background-repeat: no-repeat;
+}
+
+body.career .careerWrap .careerB .career_tt_wrap h1 {
+  position: static;
+}
+
+body.career .careerWrap .careerB .career_tt_wrap .logo {
+  max-width: 120px;
+  margin: -100px 0 40px;
+}
+/*# sourceMappingURL=career.css.map */

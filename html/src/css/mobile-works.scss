@@ -1,0 +1,69 @@
+@charset "utf-8";
+@media all and (max-width: 860px) {
+  body{
+    font-size: 14px;
+    &.works{
+      .wrap1280 {
+        width: 100%;
+      }
+      h1 {
+        font-size: 2.85em;
+      }
+      h2 {
+        font-size: 2.14em;
+        line-height: 1.6;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      h4{
+        font-size: 16px;
+      }
+      hr{
+        display: none;
+        &.mobile_hr{
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: rgba(0,0,0,0.1);
+          margin: 0;
+        }
+      }
+        section{
+          &.Technical-case  .wrap1280 ul.article{
+              margin-bottom: 0;
+          }
+          .wrap1280{
+            > p {
+              width: 100%;
+            }
+            h3{
+              width: 50%;
+            }
+            ul.article{
+              width: 100%;
+              margin-bottom: 10vh;
+              flex-direction: column;
+              li{
+                width: 100%;
+                margin-bottom: 30px;
+                }
+              }
+            }
+          }
+        
+        }
+    }
+  }
+
+@media all and (max-width: 860px) {
+
+}
+@media all and (max-width: 650px) {
+	.wrap1280 {
+    margin: 0; 
+  }
+  .section-wrap{
+    margin-left: 2%;
+  }
+}
