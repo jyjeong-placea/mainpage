@@ -69,7 +69,7 @@
 </head>
 
 <body class="works">
-    <header>
+    <header id="header_contents">
         <div class="logoWrap">
             <a href="./index.html"><img src="./src/img/logo.svg" class="logo"></a>
         </div>
@@ -77,8 +77,7 @@
             <span></span> 
             <span></span> 
         </div>
-        <nav>
-            
+        <nav>           
             <ul>
                 <li><a href="about.html">about</a></li>
                 <li><a href="works.html">works</a></li>
@@ -94,18 +93,66 @@
         </nav>
     </header>
     <div class="works-content">
-        <section class="sub_header"></section>
-        <section class="main_contents" style="height:1280px;">
-            <div class="sub_column">
+        <section class="sub_header" id="sub_header">
+            <p class="placea_intro_text">플레이스에이는</p>
+            <p>세상에 존재하는 많은 것들을 컴퓨터가 이해하고</p>
+            <p>처리할 수 있도록 데이터로 가공해 냅니다.</p>
+        </section>
+        <section class="main_contents" id="works_main_contents">
+            <div class="sub_column" id="sub_column">
+                <div class="sub_column_text_wrapper">
+                    <div>
+                    Human Recognition
+                    </div>
+                </div>
+                <div class="sub_column_text_wrapper">
+                    <div>
+                    Human to avatar
+                    </div>
+                </div>
+                <div class="sub_column_text_wrapper">
+                    <div>
+                    Objective Recognition
+                    </div>
+                </div>
             </div>    
             <div class="intro_video_contents">
+                <div class="intro_video_contents_background_video"></div>
+                <div class="intro_video_contents_text">
+                    현실을 이루고 살아가는 사람들과 다양한 환경을 가상 공간에 <br>
+                    투영하여 꿈꿔왔던 다양한 시도를 가능하게 합니다. <br>
+                    <br>
+                    플레이스에이의 인공지능 기술은 어디에서나, 정확하고, <br>
+                    빠르게 그 과정을 실행할 수 있도록 돕습니다. <br>
+                </div>
+                <div class="intro_video_contents_arrow" id="intro_video_contents_arrow">
+                    <img src="./img/scroll_down_arrow_btn.svg">
+                </div>
             </div>
-            <div class="intro_text_contents">
+            <div class="intro_text_contents" id="intro_text_contents">
+                어디서나 스마트폰 한대만 있으면 <br>
+                나의 움직임을 가상 공간에 옮길 수 있습니다
             </div>
             <div class="contents_wrapper"> <!-- 주요 내용을 담는 wrapper -->
-                <div class="left_contents">  <!-- 텍스트 or 이미지 / 비디오, 텍스트일 경우에 works_slider_contents.html 적용 -->
-                </div>
-                <div class="right_contents"> <!-- 텍스트 or 이미지 / 비디오, 텍스트일 경우에 works_slider_contents.html 적용 -->
+                <div class="contents_wrapper_center" id="">
+                    <div id="contents_slider_wrapper">
+                        <div class="slider">a</div>
+                        <div class="slider">b</div>
+                        <div class="slider">c</div>
+                        <div class="slider">d</div>
+                    </div>
+                    <div class="slider_status_bar">
+                        <div class="contents_slider_wrapper_status_sticks" id="contents_slider_wrapper_status_sticks">
+                        </div>
+                        <div class="carousel_page_btns">
+                            <div class="carousel_page_pre_btn" id="first_page_pre_btn">
+                                <img src="./img/carousel_page_pre_btn.svg">
+                            </div>
+                            <div class="carousel_page_next_btn" id="first_page_next_btn">
+                                <img src="./img/carousel_page_next_btn.svg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="bottom_contents">
@@ -132,7 +179,8 @@
         wow.init();
     </script>
     <script src="./src/js/common.js"></script>
-
+    <script src="./js/works_slider.js"></script>
+    <script src="./js/works_scrolls.js"></script>
 </body>
 
 </html>
