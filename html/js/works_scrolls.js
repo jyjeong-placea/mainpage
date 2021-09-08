@@ -20,9 +20,14 @@ document.addEventListener('scroll', function() {
     console.log('끝')
   }
   */
-  //document.getElementById('works_main_contents').scrollIntoView({behavior: 'smooth', block: 'center' });
+  //document.getElementById('works_main_contents').scrollIntoView({behavior: 'smooth', block: 'center' });  
+
   let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
   //console.log(scrollLocation);
+
+  if(!init_scroll_move && scrollLocation > $("#works_main_contents").offset().top) {
+    init_scroll_move = true;
+  }
   
   if(scrollLocation > 100 && scrollLocation < sub_header_height && !init_scroll_move){
     var offset = $("#works_main_contents").offset();
@@ -30,19 +35,28 @@ document.addEventListener('scroll', function() {
     console.log('go to main contents');
     init_scroll_move = true;
   }
-
+  /*
   if(init_scroll_move){
     if(scrollLocation < last_scroll_location){
       header_contents.style.display = "block";
       console.log('header_height ' + header_height);
-      sub_column.style.top = "70px";
+      sub_column.style.top = "95px"; //include header padding
     } else { 
       header_contents.style.display = "none";
       sub_column.style.top = 0;
     }
   }
+  */
+  if(scrollLocation < last_scroll_location){
+    header_contents.style.display = "block";
+    console.log('header_height ' + header_height);
+    sub_column.style.top = "95px"; //include header padding
+  } else { 
+    header_contents.style.display = "none";
+    sub_column.style.top = 0;
+  }
 
-  if(scrollLocation > sub_header_height){
+  if(scrollLocation + 95 > sub_header_height){ /*include header padding*/
     sub_column.style.position = "fixed";
   } else {
     sub_column.style.position = "static";
@@ -52,7 +66,7 @@ document.addEventListener('scroll', function() {
 });
 
 intro_video_contents_arrow.addEventListener('click', function () {
-  var offset = $("#intro_text_contents").offset();
+  var offset = $("#intro_text_contents_hrc").offset();
   $('html, body').animate({scrollTop : offset.top}, 1200);
-  console.log('go to intro_text_contents');
+  console.log('go to intro_text_contents_hrc');
 });
