@@ -114,7 +114,7 @@ body.works .sub_column .sub_column_text_wrapper div {
 }
 
 body.works .intro_video_contents {
-  height: 840px;
+  height: 100vh;
   background-color: gray;
   display: flex;
   justify-content: center;

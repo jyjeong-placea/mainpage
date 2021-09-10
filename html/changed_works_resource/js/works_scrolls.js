@@ -2,7 +2,6 @@ var init_scroll_move = false;
 var sub_header = document.getElementById('sub_header');
 var sub_header_height = sub_header.clientHeight;
 var header_contents = document.getElementById('header_contents');
-var header_height = header_contents.style.clientHeight;
 var last_scroll_location = 0;
 var intro_video_contents_arrow = document.getElementById('intro_video_contents_arrow');
 var sub_column = document.getElementById('sub_column');
@@ -54,7 +53,6 @@ document.addEventListener('scroll', function() {
   */
   if(scrollLocation < last_scroll_location){
     header_contents.style.display = "block";
-    console.log('header_height ' + header_height);
     sub_column.style.top = "95px"; //include header padding
   } else { 
     header_contents.style.display = "none";
