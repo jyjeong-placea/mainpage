@@ -6,6 +6,7 @@ var header_height = header_contents.style.clientHeight;
 var last_scroll_location = 0;
 var intro_video_contents_arrow = document.getElementById('intro_video_contents_arrow');
 var sub_column = document.getElementById('sub_column');
+var fixed_button = document.getElementById('fixed_button');
 
 document.addEventListener('scroll', function() {
   /*
@@ -74,3 +75,9 @@ intro_video_contents_arrow.addEventListener('click', function () {
   $('html, body').animate({scrollTop : offset.top}, 1200);
   console.log('go to intro_text_contents_hrc');
 });
+
+fixed_button.addEventListener('click', function(){
+  var offset = $("#works-content").offset();
+  $('html, body').animate({scrollTop : offset.top}, 1200);
+  console.log('go to works-content');
+}) 
