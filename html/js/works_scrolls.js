@@ -25,6 +25,10 @@ document.addEventListener('scroll', function() {
   let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
   //console.log(scrollLocation);
 
+  if(scrollLocation == 0){
+    init_scroll_move = false;
+  }
+
   if(!init_scroll_move && scrollLocation > $("#works_main_contents").offset().top) {
     init_scroll_move = true;
   }
