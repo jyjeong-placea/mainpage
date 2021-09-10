@@ -9,9 +9,9 @@ function setPageStatus(slider_id, slider_count, current_index) {
   for (let i = 0 ; i< slider_count ; i++){
     var bar = document.createElement('img');
     if( i == current_index ){
-      bar.src ="./img/status_bar_active.svg";
+      bar.src ="./changed_works_resource/img/status_bar_active.svg";
     }else {
-      bar.src ="./img/status_bar_inactive.svg";
+      bar.src ="./changed_works_resource/img/status_bar_inactive.svg";
     }
 
     status_bars.appendChild(bar);
