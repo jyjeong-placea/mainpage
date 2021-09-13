@@ -47,7 +47,6 @@ function scroll_more_860(){
       header_contents.style.display = "block";
       sub_column.style.top = "95px"; //include header padding
       
-      console.log('up scroll event');
       if(!auto_scroll_active){
 
         if (scroll_stage == 1 ) {
@@ -79,7 +78,6 @@ function scroll_more_860(){
 
       header_contents.style.display = "none";
       sub_column.style.top = 0;
-      console.log('down scroll event');
 
       if(!auto_scroll_active){      
         
@@ -130,10 +128,8 @@ function scroll_less_860(){
     scroll_stage = 2;
   } else if ( scrollLocation > contents_group_wrapper_offset.top && scrollLocation < hrc_contents_slider_wrapper.top){
     scroll_stage = 3;
-    console.log(scroll_stage);
   } else if ( scrollLocation > hrc_contents_slider_wrapper.top){
     scroll_stage = 4;
-    console.log(scroll_stage);
   }
 
   if(scrollLocation < last_scroll_location){
@@ -145,7 +141,6 @@ function scroll_less_860(){
       header_contents.style.display = "block";
       sub_column.style.top = window.innerWidth / 10 + 'px'; //include header padding
       
-      console.log('up scroll event');
       if(!auto_scroll_active){
 
         if (scroll_stage == 1 ) {
@@ -181,7 +176,6 @@ function scroll_less_860(){
 
       header_contents.style.display = "none";
       sub_column.style.top = 0;
-      console.log('down scroll event');
 
       if(!auto_scroll_active){      
         
@@ -235,12 +229,10 @@ document.addEventListener('scroll', function() {
 intro_video_contents_arrow.addEventListener('click', function () {
   var offset = $("#intro_text_contents_hrc").offset();
   $('html, body').animate({scrollTop : offset.top}, 1200);
-  console.log('go to intro_text_contents_hrc');
 });
 
 fixed_button.addEventListener('click', function(){
   var offset = $("#works-content").offset();
   $('html, body').animate({scrollTop : offset.top}, 1200);
-  console.log('go to works-content');
 }) 
 
