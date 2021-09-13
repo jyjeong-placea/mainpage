@@ -10,6 +10,7 @@ var sub_header = document.getElementById('sub_header');
 var sub_header_height = sub_header.clientHeight;
 
 var header_contents = document.getElementById('header_contents');
+
 var last_scroll_location = 0;
 var intro_video_contents_arrow = document.getElementById('intro_video_contents_arrow');
 
@@ -116,7 +117,7 @@ function scroll_more_860(){
 }
 
 
-console.log(hrc_contents_slider_wrapper.top);
+
 
 function scroll_less_860(){
   let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
@@ -142,7 +143,7 @@ function scroll_less_860(){
         down_scroll_counter =0;
 
       header_contents.style.display = "block";
-      sub_column.style.top = "86px"; //include header padding
+      sub_column.style.top = window.innerWidth / 10 + 'px'; //include header padding
       
       console.log('up scroll event');
       if(!auto_scroll_active){
