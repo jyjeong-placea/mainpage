@@ -23,9 +23,8 @@ var fixed_button = document.getElementById('fixed_button');
 var works_main_contents_offset = $("#works_main_contents").offset();
 var contents_group_wrapper_offset = $("#contents_group_wrapper").offset();
 var contents_bottom_offset = $("#contents_bottom").offset();
-
-document.addEventListener('scroll', function() {
-
+var hrc_contents_slider_wrapper = $("#hrc_contents_slider_wrapper").offset();
+function scroll_more_860(){
   let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
 
   if(scrollLocation == 0){
@@ -114,6 +113,122 @@ document.addEventListener('scroll', function() {
   }
 
   last_scroll_location = scrollLocation;
+}
+
+
+console.log(hrc_contents_slider_wrapper.top);
+
+function scroll_less_860(){
+  let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
+
+  if(scrollLocation == 0){
+    scroll_stage = 0;
+  } else if( scrollLocation > 0 && scrollLocation < sub_header_height) {
+    scroll_stage = 1;
+  } else if ( scrollLocation > sub_header_height && scrollLocation < contents_group_wrapper_offset.top) {
+    scroll_stage = 2;
+  } else if ( scrollLocation > contents_group_wrapper_offset.top && scrollLocation < hrc_contents_slider_wrapper.top){
+    scroll_stage = 3;
+    console.log(scroll_stage);
+  } else if ( scrollLocation > hrc_contents_slider_wrapper.top){
+    scroll_stage = 4;
+    console.log(scroll_stage);
+  }
+
+  if(scrollLocation < last_scroll_location){
+    up_scroll_counter++;
+    if(up_scroll_counter > 30){
+        up_scroll_counter = 0;
+        down_scroll_counter =0;
+
+      header_contents.style.display = "block";
+      sub_column.style.top = "86px"; //include header padding
+      
+      console.log('up scroll event');
+      if(!auto_scroll_active){
+
+        if (scroll_stage == 1 ) {
+          auto_scroll_active = true;
+          $('html, body').animate({scrollTop : 0}, 1200, 'swing', function(){
+            auto_scroll_active = false;
+          });
+        } else if (scroll_stage == 2){
+          auto_scroll_active = true;
+          $('html, body').animate({scrollTop : works_main_contents_offset.top}, 1200, 'swing', function(){
+            auto_scroll_active = false;
+          });
+        } else if (scroll_stage == 3){
+          auto_scroll_active = true;
+          $('html, body').animate({scrollTop : contents_group_wrapper_offset.top - (sub_column_height * 2 + header_height)}, 1200, 'swing', function(){
+            auto_scroll_active = false;
+          });
+        } else if (scroll_stage == 4){
+          auto_scroll_active = true;
+          $('html, body').animate({scrollTop : hrc_contents_slider_wrapper.top - (sub_column_height + header_height * 2)}, 1200, 'swing', function(){
+            auto_scroll_active = false;
+          });
+        } else if (scroll_stage == 0){
+        }
+      }
+    }
+  } else if (scrollLocation > last_scroll_location) { 
+
+    down_scroll_counter++;
+    if(down_scroll_counter > 30){
+      up_scroll_counter = 0;
+      down_scroll_counter = 0;
+
+      header_contents.style.display = "none";
+      sub_column.style.top = 0;
+      console.log('down scroll event');
+
+      if(!auto_scroll_active){      
+        
+        if (scroll_stage == 0 ) {
+        } else if (scroll_stage == 1){
+          auto_scroll_active = true;
+          $('html, body').animate({scrollTop : works_main_contents_offset.top}, 1200, 'swing', function(){
+            auto_scroll_active = false;
+          });
+        } else if (scroll_stage == 2){
+          auto_scroll_active = true;
+          $('html, body').animate({scrollTop : contents_group_wrapper_offset.top - sub_column_height}, 1200, 'swing', function(){
+            auto_scroll_active = false;
+          });
+        } else if (scroll_stage == 3){
+          auto_scroll_active = true;
+          $('html, body').animate({scrollTop : hrc_contents_slider_wrapper.top - (sub_column_height + header_height) }, 1200, 'swing', function(){
+            auto_scroll_active = false;
+          });
+        } else if (scroll_stage == 4){
+          /*
+          auto_scroll_active = true;
+          $('html, body').animate({scrollTop : hrc_contents_slider_wrapper.top}, 1200, 'swing', function(){
+            auto_scroll_active = false;
+          });
+          */
+        }
+      }
+    }
+  } else { 
+
+  }
+
+  if(scrollLocation + 95 > sub_header_height){ /*include header padding*/
+    sub_column.style.position = "fixed";
+  } else {
+    sub_column.style.position = "static";
+  }
+
+  last_scroll_location = scrollLocation;
+}
+
+document.addEventListener('scroll', function() {
+  if (matchMedia("screen and (max-width: 860px)").matches) { 
+    scroll_less_860(); // width 860 이하 일경우 scroll 이벤트
+  }else {
+    scroll_more_860(); // width 860 이상 일경우 scroll 이벤트
+  }
 });
 
 intro_video_contents_arrow.addEventListener('click', function () {

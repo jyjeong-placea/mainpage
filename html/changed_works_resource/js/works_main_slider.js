@@ -33,6 +33,10 @@ human_recognition_btn.addEventListener('click', function () {
   changeBtnState(human_recognition_btn, true);
   changeBtnState(human_to_avatar_btn, false);
   changeBtnState(object_recognition_btn, false);
+
+  var offset = $("#intro_text_contents_hrc").offset();
+  $('html, body').animate({scrollTop : offset.top}, 1200);
+
   setMainSlider('contents_group', 0);
 });
 
@@ -40,6 +44,10 @@ human_to_avatar_btn.addEventListener('click', function () {
   changeBtnState(human_recognition_btn, false);
   changeBtnState(human_to_avatar_btn, true);
   changeBtnState(object_recognition_btn, false);
+
+  var offset = $("#intro_text_contents_hrc").offset();
+  $('html, body').animate({scrollTop : offset.top}, 1200);
+
   setMainSlider('contents_group', 1);
 });
 
@@ -47,5 +55,9 @@ object_recognition_btn.addEventListener('click', function () {
   changeBtnState(human_recognition_btn, false);
   changeBtnState(human_to_avatar_btn, false);
   changeBtnState(object_recognition_btn, true);
+
+  var offset = $("#intro_text_contents_hrc").offset();
+  $('html, body').animate({scrollTop : offset.top}, 1200);
+  
   setMainSlider('contents_group', 2);
 });
