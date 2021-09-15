@@ -63,6 +63,7 @@ var orc_nextBtn = document.getElementById('orc_first_page_next_btn');
 var orc_prevBtn = document.getElementById('orc_first_page_pre_btn');
 
 hrc_nextBtn.addEventListener('click', function () {
+  hrc_nextBtn.src
   plusSlides('hrc_contents_slider_wrapper', 1);
 });
 hrc_prevBtn.addEventListener('click', function () {

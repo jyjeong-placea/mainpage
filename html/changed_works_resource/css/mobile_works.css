@@ -452,6 +452,11 @@
     flex-direction: column;
   }
 
+  body.works .contents_center{
+    width: 100vw;
+    height: 100vh;
+  }
+
   body.works .contents_wrapper_center{
     width: 90vw;
     height: 85vh;
@@ -467,6 +472,10 @@
     -webkit-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
     -o-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
     transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+  }
+
+  body.works #hac_contents_slider_wrapper .slider {
+    flex-direction: column-reverse;
   }
 
   body.works .slider{
@@ -558,35 +567,44 @@
     margin : 30px;
   
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   
   body.works .contents_bottom_column_hrc {
     width: 80vw;
-    height: 580px;
+    height: 360px;
   }
   
   body.works .contents_bottom_column_hac {
     width: 80vw;
-    height: 580px;
+    height: 500px;
   }
   
   body.works .contents_bottom_column_orc {
     width: 80vw;
-    height: 580px;
+    height: 500px;
   }
   
   body.works .contents_bottom_symbol_wrapper {
-    width : 100%;
-    height : 290px;
+    width : 30%;
+    height: 100%;
   }
   
   body.works .contents_bottom_symbol_image {
     position: relative;
     left : 50px;
-    top : 50px;
+    top : 125px;
   }
   
+  body.works .contents_bottom_text_wrapper{
+    width: 70%;
+    height: 100%;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   body.works .contents_bottom_text_title {
     font-family: Noto Sans KR;
     font-style: normal;
@@ -610,5 +628,36 @@
   
     color: #000000;
     margin-left: 50px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  body.works .contents_bottom_column {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  body.works .contents_bottom_symbol_wrapper {
+    width : 100%;
+    height: 40%;
+  }
+  
+  body.works .contents_bottom_symbol_image {
+    position: relative;
+    left : 50px;
+    top : 50px;
+  }
+  
+  body.works .contents_bottom_text_wrapper{
+    width: 100%;
+    height: 60%;
+  }
+
+  body.works .contents_bottom_text_title {
+    margin-top: 0px;
+  }
+  
+  body.works .contents_bottom_text_details {
+
   }
 }
