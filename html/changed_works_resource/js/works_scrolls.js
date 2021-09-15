@@ -45,7 +45,7 @@ function scroll_more_860(){
         down_scroll_counter =0;
 
       header_contents.style.display = "block";
-      sub_column.style.top = "95px"; //include header padding
+      sub_column.style.top = "94px"; //include header padding
       
       if(!auto_scroll_active){
 
