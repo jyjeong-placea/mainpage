@@ -128,8 +128,10 @@ function scroll_less_860(){
     scroll_stage = 2;
   } else if ( scrollLocation > contents_group_wrapper_offset.top && scrollLocation < hrc_contents_slider_wrapper.top){
     scroll_stage = 3;
-  } else if ( scrollLocation > hrc_contents_slider_wrapper.top){
+  } else if ( scrollLocation > hrc_contents_slider_wrapper.top && scrollLocation < contents_bottom_offset.top){
     scroll_stage = 4;
+  } else {
+    scroll_stage = 5;
   }
 
   if(scrollLocation < last_scroll_location){
@@ -196,12 +198,11 @@ function scroll_less_860(){
             auto_scroll_active = false;
           });
         } else if (scroll_stage == 4){
-          /*
           auto_scroll_active = true;
-          $('html, body').animate({scrollTop : hrc_contents_slider_wrapper.top}, 1200, 'swing', function(){
+          $('html, body').animate({scrollTop : contents_bottom_offset.top - (sub_column_height + header_height) }, 1200, 'swing', function(){
             auto_scroll_active = false;
           });
-          */
+          
         }
       }
     }
