@@ -145,7 +145,7 @@ function scroll_less_860(){
         down_scroll_counter =0;
 
       header_contents.style.display = "block";
-      sub_column.style.top = window.innerWidth / 10 + 'px'; //include header padding
+      sub_column.style.top = window.innerWidth / 10 - 2 + 'px'; //include header padding, -2 is optical set
       
       if(!auto_scroll_active){
 

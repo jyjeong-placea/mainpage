@@ -79,7 +79,7 @@ intro_video_contents_text_value =
   '그 과정을 실행할 수 있도록 돕습니다. <br>';
 intro_text_contents_hac_value = 
   '나의 표정과 몸짓 그대로<br>' + 
-  '실감나게 표현합니다.'
+  '실감나게 표현합니다'
 intro_text_contents_hrc_value  = 
   '어디서나 <br>' +
   '스마트폰 한대만 있으면<br> ' +
@@ -188,7 +188,7 @@ intro_video_contents_text_value =
   '그 과정을 실행할 수 있도록 돕습니다. <br>';
 intro_text_contents_hac_value = 
   '나의 표정과 몸짓 그대로<br>' + 
-  '실감나게 표현합니다.'
+  '실감나게 표현합니다'
 intro_text_contents_hrc_value  = 
   '어디서나 <br>' +
   '스마트폰 한대만 있으면<br> ' +
@@ -297,7 +297,7 @@ intro_text_contents_hrc_value  =
 
 intro_text_contents_hac_value = 
   '나의 표정과 몸짓 그대로<br>' + 
-  '실감나게 표현합니다.';
+  '실감나게 표현합니다';
 
 intro_text_contents_orc_value =
   '더욱 실감나고 역동적인 <br>' + 
@@ -320,6 +320,7 @@ hrc_slider_detail_3_value =
   '특수한 환경 구축없이 고품질 모션 데이터를 얻을 수 있습니다. <br> ' + 
   '4-8대의 일반적인 RGB 카메라만으로 기존 스튜디오 촬영에 버금가는 <br> ' +
   '정밀한 3D 모션캡처 서비스를 제공합니다. ';
+
 hac_slider_detail_1_value = 
   '신체 모션 데이터를 다양한 3D 캐릭터의 움직임으로 쉽게 변환할 수 있습니다. <br>' +
   '(+How to 조금더)플레이스에이가 제공하는 솔루션으로 캐릭터의 체형에 <br>' +
