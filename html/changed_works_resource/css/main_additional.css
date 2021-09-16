@@ -18,14 +18,15 @@ body.main .new_main_text{
 
 @media all and (max-width: 860px) {
   body.main .new_main_line{
+    width: 40vw;
   }
 
   body.main .new_main_text{
     font-family: Noto Sans KR;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 20px;
+    line-height: 40px;
     /* or 140% */
   
     text-align: center;
