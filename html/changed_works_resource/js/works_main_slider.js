@@ -58,7 +58,6 @@ human_to_avatar_btn.addEventListener('click', function () {
   $('html, body').animate({scrollTop : offset.top - sub_column_height_}, 1200, 'swing', function(){
     scroll_valid = true;
   });
-  
 
   setMainSlider('contents_group', 1);
 });
@@ -73,7 +72,6 @@ object_recognition_btn.addEventListener('click', function () {
   $('html, body').animate({scrollTop : offset.top - sub_column_height_}, 1200, 'swing', function(){
     scroll_valid = true;
   });
-  
   
   setMainSlider('contents_group', 2);
 });

@@ -20,13 +20,8 @@ function setSubSlider(slider_id, add_index) {
   var slider = document.getElementById(slider_id);
   
   var items = slider.getElementsByClassName('slider');
-  /*
-  var slider_default_width = 1220;
-  var all_width = items.length * slider_default_width;
-  */ 
-  // 임시 주석 처리 contents_wrapper_center
+ 
   var slider_default_width = slider.parentNode.clientWidth;
-  //console.log(slider_default_width);
   var all_width = items.length * slider_default_width;
 
   slider.style.width =  all_width+'px';

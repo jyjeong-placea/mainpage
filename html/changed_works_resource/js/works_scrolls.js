@@ -25,6 +25,7 @@ var works_main_contents_offset = $("#works_main_contents").offset();
 var contents_group_wrapper_offset = $("#contents_group_wrapper").offset();
 var contents_bottom_offset = $("#contents_bottom").offset();
 var hrc_contents_slider_wrapper = $("#hrc_contents_slider_wrapper").offset();
+
 function scroll_more_860(){
   let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
 
@@ -116,9 +117,6 @@ function scroll_more_860(){
 
   last_scroll_location = scrollLocation;
 }
-
-
-
 
 function scroll_less_860(){
   let scrollLocation = document.documentElement.scrollTop; // 현재 스크롤바 위치
@@ -240,7 +238,17 @@ intro_video_contents_arrow.addEventListener('click', function () {
 });
 
 fixed_button.addEventListener('click', function(){
+  scroll_valid = false;
   var offset = $("#works-content").offset();
-  $('html, body').animate({scrollTop : offset.top}, 1200);
+  $('html, body').animate({scrollTop : offset.top}, 1200, 'swing', function(){
+    scroll_valid = true;
+    if (matchMedia("screen and (max-width: 860px)").matches) { 
+      header_contents.style.display = "block";
+      sub_column.style.top = window.innerWidth / 10 + 'px'; //include header padding
+    } else {
+      header_contents.style.display = "block";
+      sub_column.style.top = "94px"; //include header padding
+    }
+  });
 }) 
 
