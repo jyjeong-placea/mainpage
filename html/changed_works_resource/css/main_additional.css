@@ -33,5 +33,9 @@ body.main .new_main_text{
     color: #FFFFFF;
   
     margin-top: 30px;
+
+    /*remove original filter*/
+    -webkit-filter: auto;
+    filter: auto;
   }
 }
