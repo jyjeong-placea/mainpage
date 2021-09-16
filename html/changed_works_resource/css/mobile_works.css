@@ -588,12 +588,14 @@
   body.works .contents_bottom_symbol_wrapper {
     width : 30%;
     height: 100%;
+    display: flex;
+    align-items: center;
   }
   
   body.works .contents_bottom_symbol_image {
     position: relative;
-    left : 50px;
-    top : 125px;
+    left: 50px;
+    top: auto;
   }
   
   body.works .contents_bottom_text_wrapper{

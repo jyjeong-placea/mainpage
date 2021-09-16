@@ -38,9 +38,12 @@ function scroll_more_860(){
     scroll_stage = 3;
   }
 
-  if(scrollLocation < last_scroll_location){
+  if (!scroll_valid){
+    header_contents.style.display = "none";
+    sub_column.style.top = 0;
+  } else if(scrollLocation < last_scroll_location){
     up_scroll_counter++;
-    if(up_scroll_counter > 20){
+    if(up_scroll_counter > 40){
         up_scroll_counter = 0;
         down_scroll_counter =0;
 
@@ -72,7 +75,7 @@ function scroll_more_860(){
   } else if (scrollLocation > last_scroll_location) { 
 
     down_scroll_counter++;
-    if(down_scroll_counter > 20){
+    if(down_scroll_counter > 40){
       up_scroll_counter = 0;
       down_scroll_counter =0;
 
@@ -105,7 +108,7 @@ function scroll_more_860(){
 
   }
 
-  if(scrollLocation + 95 > sub_header_height){ /*include header padding*/
+  if(scrollLocation + 94 > sub_header_height){ /*include header padding*/
     sub_column.style.position = "fixed";
   } else {
     sub_column.style.position = "static";
@@ -134,7 +137,10 @@ function scroll_less_860(){
     scroll_stage = 5;
   }
 
-  if(scrollLocation < last_scroll_location){
+  if (!scroll_valid){
+    header_contents.style.display = "none";
+    sub_column.style.top = 0;
+  } else if(scrollLocation < last_scroll_location){
     up_scroll_counter++;
     if(up_scroll_counter > 30){
         up_scroll_counter = 0;
@@ -210,7 +216,7 @@ function scroll_less_860(){
 
   }
 
-  if(scrollLocation + 95 > sub_header_height){ /*include header padding*/
+  if(scrollLocation + 94 > sub_header_height){ /*include header padding*/
     sub_column.style.position = "fixed";
   } else {
     sub_column.style.position = "static";
@@ -220,6 +226,7 @@ function scroll_less_860(){
 }
 
 document.addEventListener('scroll', function() {
+
   if (matchMedia("screen and (max-width: 860px)").matches) { 
     scroll_less_860(); // width 860 이하 일경우 scroll 이벤트
   }else {

@@ -18,6 +18,11 @@ var human_recognition_btn = document.getElementById('human_recognition_btn');
 var human_to_avatar_btn = document.getElementById('human_to_avatar_btn');
 var object_recognition_btn = document.getElementById('object_recognition_btn');
 
+var sub_column_elem = document.getElementById('sub_column');
+var sub_column_height_ = sub_column_elem.clientHeight;
+
+var scroll_valid = true;
+
 function changeBtnState(button, active) {
   if(active){
     button.getElementsByClassName('sub_column_text_wrapper_btn')[0].style.color = "#FFFFFF";
@@ -33,10 +38,13 @@ human_recognition_btn.addEventListener('click', function () {
   changeBtnState(human_recognition_btn, true);
   changeBtnState(human_to_avatar_btn, false);
   changeBtnState(object_recognition_btn, false);
-
+  scroll_valid = false;
   var offset = $("#intro_text_contents_hrc").offset();
-  $('html, body').animate({scrollTop : offset.top}, 1200);
-
+  
+  $('html, body').animate({scrollTop : offset.top - sub_column_height_}, 1200, 'swing', function(){
+    scroll_valid = true;
+  });
+  
   setMainSlider('contents_group', 0);
 });
 
@@ -44,9 +52,13 @@ human_to_avatar_btn.addEventListener('click', function () {
   changeBtnState(human_recognition_btn, false);
   changeBtnState(human_to_avatar_btn, true);
   changeBtnState(object_recognition_btn, false);
-
+  scroll_valid = false;
   var offset = $("#intro_text_contents_hrc").offset();
-  $('html, body').animate({scrollTop : offset.top}, 1200);
+  
+  $('html, body').animate({scrollTop : offset.top - sub_column_height_}, 1200, 'swing', function(){
+    scroll_valid = true;
+  });
+  
 
   setMainSlider('contents_group', 1);
 });
@@ -55,9 +67,13 @@ object_recognition_btn.addEventListener('click', function () {
   changeBtnState(human_recognition_btn, false);
   changeBtnState(human_to_avatar_btn, false);
   changeBtnState(object_recognition_btn, true);
-
+  scroll_valid = false;
   var offset = $("#intro_text_contents_hrc").offset();
-  $('html, body').animate({scrollTop : offset.top}, 1200);
+  
+  $('html, body').animate({scrollTop : offset.top - sub_column_height_}, 1200, 'swing', function(){
+    scroll_valid = true;
+  });
+  
   
   setMainSlider('contents_group', 2);
 });
