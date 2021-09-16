@@ -152,6 +152,7 @@ body.works .intro_video_contents_arrow{
 }
 
 body.works .intro_text_contents{
+  width: 100vw;
   height:25vh;
   font-family: Noto Sans KR;
   font-style: normal;
@@ -166,10 +167,6 @@ body.works .intro_text_contents{
   align-items: center;
   color: #111111;
 
-}
-
-body.works #intro_text_contents_hac{
-  color: #FFFFFF;
 }
 
 body.works .contents_group_wrapper {
@@ -222,6 +219,14 @@ body.works .contents_wrapper_center{
 
   border-radius: 20px;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.11);
+}
+
+
+body.works #intro_text_contents_hac{
+  color: #FFFFFF;
+}
+
+body.works #contents_center_hac{
 }
 
 body.works .contents_slider_wrapper {
