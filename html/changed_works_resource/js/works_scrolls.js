@@ -146,7 +146,7 @@ function scroll_less_860(){
 
       header_contents.style.display = "block";
       sub_column.style.top = window.innerWidth / 10 - 2 + 'px'; //include header padding, -2 is optical set
-      
+      /*
       if(!auto_scroll_active){
 
         if (scroll_stage == 1 ) {
@@ -172,6 +172,7 @@ function scroll_less_860(){
         } else if (scroll_stage == 5){
         }
       }
+      */
     }
   } else if (scrollLocation > last_scroll_location) { 
 
@@ -182,7 +183,7 @@ function scroll_less_860(){
 
       header_contents.style.display = "none";
       sub_column.style.top = 0;
-
+      /*
       if(!auto_scroll_active){      
         
         if (scroll_stage == 0 ) {
@@ -208,6 +209,7 @@ function scroll_less_860(){
           });  
         }
       }
+      */
     }
   } else { 
 

@@ -508,6 +508,7 @@
   body.works .slider_text_layout {
     width: 100%;
     height: 50%;
+    align-items: auto;
   }
 
   body.works .slider_text_title {
@@ -529,10 +530,12 @@
     font-weight: normal;
     font-size: 1em;
     line-height: 1.5em;
+    width:70vw;
+    height:100%;
     /* or 162% */
-    margin-left: 50px;
   
     color: #111111;  
+    white-space:normal;
   }
 
   body.works .slider_status_bar_right{
@@ -584,7 +587,7 @@
   
   body.works .contents_bottom_column_hrc {
     width: 80vw;
-    height: 400px;
+    height: 450px;
   }
   
   body.works .contents_bottom_column_hac {
@@ -689,5 +692,6 @@
   body.works .slider_text_layout {
     width: 100%;
     height: 60%;
+    align-items: auto;
   }
 }
