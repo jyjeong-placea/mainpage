@@ -63,17 +63,16 @@ if (matchMedia("screen and (max-width: 650px)").matches){
   // values //
 sub_header_value = 
   '<p class="placea_intro_text">플레이스에이는</p>' +
-  '<p>현실을 이루고 살아가는</p>'+
-  '<p>사람들과 다양한 환경을 </p>' +
+  '<p>우리가 살아가는 다양한 환경을 </p>' +
   '<p>가상 공간에 투영하여 </p>'+
   '<p>꿈꿔왔던 시도를 가능하게 합니다 </p>'
   
-intro_video_contents_text_value = 
-  '세상에 존재하는 많은 것들을 <br>'+
+intro_video_contents_text_value = ' '
+/*  '세상에 존재하는 많은 것들을 <br>'+
   '이해하고 표현할 수 있도록<br>' +
   '플레이스에이의 기술은 어디에서나<br>' +
   '정확하고, 빠르게, <br>'+
-  '그 과정을 실행할 수 있도록 돕습니다'
+  '그 과정을 실행할 수 있도록 돕습니다'*/
 intro_text_contents_hac_value = 
   '나의 표정과 몸짓 그대로<br>' + 
   '실감나게 표현합니다'
@@ -194,16 +193,15 @@ orc_bottom_sub_7_value =
   // values //
 sub_header_value = 
   '<p class="placea_intro_text">플레이스에이는</p>' +
-  '<p>현실을 이루고 살아가는</p>'+
-  '<p>사람들과 다양한 환경을 </p>' +
+  '<p>우리가 살아가는 다양한 환경을 </p>' +
   '<p>가상 공간에 투영하여 </p>'+
   '<p>꿈꿔왔던 시도를 가능하게 합니다 </p>'
-intro_video_contents_text_value = 
-  '세상에 존재하는 많은 것들을 <br>'+
+intro_video_contents_text_value = ' '
+/*  '세상에 존재하는 많은 것들을 <br>'+
   '이해하고 표현할 수 있도록<br>' +
   '플레이스에이의 기술은 어디에서나<br>' +
   '정확하고, 빠르게, <br>'+
-  '그 과정을 실행할 수 있도록 돕습니다'
+  '그 과정을 실행할 수 있도록 돕습니다'*/
 intro_text_contents_hac_value = 
   '나의 표정과 몸짓 그대로<br>' + 
   '실감나게 표현합니다'
@@ -323,12 +321,12 @@ orc_bottom_sub_7_value =
 
 sub_header_value = 
   '<p class="placea_intro_text">플레이스에이는</p>' +
-  '<p>현실을 이루고 살아가는 사람들과 다양한 환경을 </p>' +
-  '<p>가상 공간에 투영하여 꿈꿔왔던 시도를 가능하게 합니다 </p>'
+  '<p>우리가 살아가는 다양한 환경을 가상 공간에 투영하여</p>' +
+  '<p>꿈꿔왔던 시도를 가능하게 합니다 </p>'
 
-intro_video_contents_text_value = 
-  '세상에 존재하는 많은 것들을 이해하고 표현할 수 있도록<br>' +
-  '플레이스에이의 기술은 어디에서나, 정확하고, 빠르게 그 과정을 실행할 수 있도록 돕습니다'
+intro_video_contents_text_value = ' '
+/*  '세상에 존재하는 많은 것들을 이해하고 표현할 수 있도록<br>' +
+  '플레이스에이의 기술은 어디에서나, 정확하고, 빠르게 그 과정을 실행할 수 있도록 돕습니다'*/
 
 intro_text_contents_hrc_value  = 
   '어디서나 스마트폰 한대만 있으면 <br>'+
