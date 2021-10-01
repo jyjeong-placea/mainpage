@@ -54,6 +54,7 @@ body.works section.Technical-case ul.article img {
 
 body.works section.Technical-case ul.article li {
   border-top: 0;
+  left: 25%;
 }
 
 body.works section.Technical-case ul.article h4 {

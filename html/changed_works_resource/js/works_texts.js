@@ -74,16 +74,16 @@ intro_video_contents_text_value = ' '
   '정확하고, 빠르게, <br>'+
   '그 과정을 실행할 수 있도록 돕습니다'*/
 intro_text_contents_hac_value = 
-  '나의 표정과 몸짓 그대로<br>' + 
-  '실감나게 표현합니다'
+  '나의 표정과 몸짓<br>그대로 ' + 
+  '실감나게<br>표현합니다'
 intro_text_contents_hrc_value  = 
   '어디서나 <br>' +
   '스마트폰 한대만 있으면<br> ' +
   '나의 움직임을 가상 공간에<br> ' +
   '옮길 수 있습니다<br>';
 intro_text_contents_orc_value =
-  '더욱 실감나고 역동적인 <br>' + 
-  '가상 환경을 구축해 나갑니다';
+  '더욱 실감나고<br>역동적인 ' + 
+  '가상 환경을<br>구축해 나갑니다';
 hrc_slider_detail_1_value = 
   '일반적인 환경에서 촬영된 신체 동작을 ' +
   '2D와 3D로 정확하고 빠르게 ' +
@@ -143,11 +143,11 @@ orc_slider_detail_2_value =
 
 hrc_bottom_title_1_value = '한 대의 카메라도 충분합니다'
 hrc_bottom_title_2_value = '실시간으로 영상을 처리합니다'
-hrc_bottom_title_3_value = '편리하게 모션 데이터를 얻을 수 있습니다'
+hrc_bottom_title_3_value = '편리하게 모션 데이터를<br>얻을 수 있습니다'
 hac_bottom_title_4_value = '사용하던 툴에서 바로 적용해보세요'
-hac_bottom_title_5_value = '나를 실감나게 따라하는 또다른 나'
-orc_bottom_title_6_value = '역동적인 가상 환경을 구축합니다'
-orc_bottom_title_7_value = '보이는 모습 그대로 옮겨줍니다'
+hac_bottom_title_5_value = '나를 실감나게 따라하는<br>또 다른 나'
+orc_bottom_title_6_value = '역동적인 가상 환경을 <br> 구축합니다'
+orc_bottom_title_7_value = '보이는 모습<br>그대로 옮겨줍니다'
 
 hrc_bottom_sub_1_value =
   '스마트폰 카메라 한 대로 촬영된 영상이면 누구나 손쉽게 3D 모션데이터를' +
@@ -274,7 +274,7 @@ hrc_bottom_title_1_value = '한 대의 카메라도 충분합니다'
 hrc_bottom_title_2_value = '실시간으로 영상을 처리합니다'
 hrc_bottom_title_3_value = '편리하게 모션 데이터를 얻을 수 있습니다'
 hac_bottom_title_4_value = '사용하던 툴에서 바로 적용해보세요'
-hac_bottom_title_5_value = '나를 실감나게 따라하는 또다른 나'
+hac_bottom_title_5_value = '나를 실감나게 따라하는<br>또 다른 나'
 orc_bottom_title_6_value = '역동적인 가상 환경을 구축합니다'
 orc_bottom_title_7_value = '보이는 모습 그대로 옮겨줍니다'
 

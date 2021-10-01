@@ -97,6 +97,7 @@ body.works .sub_column .sub_column_text_wrapper {
   justify-content: center;
   background: #FFFFFF;
   color: #111111;
+  cursor : pointer;
 }
 
 body.works .sub_column .sub_column_text_wrapper div {
@@ -198,7 +199,7 @@ body.works #human_to_avatar_contents{
 }
 
 body.works #human_to_avatar_contents .contents_bottom {
-  background-color: #FFFFFF
+  background-color: #333333;
 }
 
 body.works .contents_center{
@@ -232,9 +233,9 @@ body.works .contents_slider_wrapper {
   height: 600px;
   display: flex;
   position: relative;
-  -webkit-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
-  -o-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
-  transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+  -webkit-transition: all 0.7s cubic-bezier(1, .01, .32, 1);
+  -o-transition: all 0.7s cubic-bezier(1, .01, .32, 1);
+  transition: all 0.7s cubic-bezier(1, .01, .32, 1);
 }
 
 body.works .slider{
