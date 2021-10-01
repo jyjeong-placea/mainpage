@@ -22,7 +22,8 @@ var fixed_button = document.getElementById('fixed_button');
 
 
 var works_main_contents_offset = $("#works_main_contents").offset();
-var contents_group_wrapper_offset = $("#contents_group_wrapper").offset();
+//임시 수정 사항
+var contents_group_wrapper_offset = $("#contents_group_wrapper").offset(); 
 var contents_bottom_offset = $("#contents_bottom").offset();
 var hrc_contents_slider_wrapper = $("#hrc_contents_slider_wrapper").offset();
 
@@ -65,7 +66,7 @@ function scroll_more_860(){
           });
         } else if (scroll_stage == 3){
           auto_scroll_active = true;
-          $('html, body').animate({scrollTop : contents_group_wrapper_offset.top - (sub_column_height + header_height)}, 800, 'swing', function(){
+          $('html, body').animate({scrollTop : contents_group_wrapper_offset.top}, 800, 'swing', function(){
             auto_scroll_active = false;
           });
         } else if (scroll_stage == 4){
@@ -93,7 +94,7 @@ function scroll_more_860(){
           });
         } else if (scroll_stage == 2){
           auto_scroll_active = true;
-          $('html, body').animate({scrollTop : contents_group_wrapper_offset.top - sub_column_height}, 800, 'swing', function(){
+          $('html, body').animate({scrollTop : contents_group_wrapper_offset.top}, 800, 'swing', function(){
             auto_scroll_active = false;
           });
         } else if (scroll_stage == 3){

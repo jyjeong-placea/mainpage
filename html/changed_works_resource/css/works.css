@@ -153,7 +153,7 @@ body.works .intro_video_contents_arrow{
 }
 
 body.works .intro_text_contents{
-  height:25vh;
+  height:20vh;
   font-family: Noto Sans KR;
   font-style: normal;
   font-weight: 900;
@@ -167,6 +167,7 @@ body.works .intro_text_contents{
   align-items: center;
   color: #111111;
 
+  margin-top: 200px;
 }
 
 body.works .contents_group_wrapper {
@@ -208,6 +209,8 @@ body.works .contents_center{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-bottom : 100px;
 }
 
 body.works .contents_wrapper_center{
